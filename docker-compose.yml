@@ -16,7 +16,7 @@ services:
     ports:
       - 8080:9000
   wordpress:
-    image: wordpress:5.6-php7.4-apache
+    image: wordpress:latest
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_USER: docker
