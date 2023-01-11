@@ -6,7 +6,7 @@
 
 1. Open the ubuntu terminal on "Windows Terminal"
 2. Change the directory to the "/projects" folder. `cd ~/projects`
-3. Clone starter repository by running `git clone https://github.com/novanda1/wordpress-docker-compose.git <your-name>` make sure to change `<your-name>` your _kebab-case_ name. For example, if your name is "John Doe" you should run
+3. Clone starter repository by running `git clone https://github.com/novanda1/wordpress-docker-compose.git <your-name>` make sure to change `<your-name>` to your _kebab-case_ name. For example, if your name is "John Doe" you should run
 
 ```sh
 git clone https://github.com/novanda1/wordpress-docker-compose.git john-doe
