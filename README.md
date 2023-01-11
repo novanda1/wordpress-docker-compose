@@ -67,14 +67,14 @@ You can get your username by running `whoami` command on your terminal.
 
 In case when you install the plugin on the plugin page and WordPress asks you for FTP access.
 
-````sh
+```sh
 # On /projects/your-name directory
 sudo chown -R www-data:www-data .
 
 # After you completed installing a plugin don't forget to bring back the access by running
-```sh
+sh
 sudo chown -R <username> .
-````
+```
 
 ### When you should and shouldn't ask?
 
