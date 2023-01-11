@@ -29,6 +29,7 @@ services:
     depends_on:
       - db
     volumes:
-      - ./:/var/www/html
+      - ./wp-content:/var/www/html/wp-content
+      - ./root:/var/www/html
 volumes:
   mysql:
