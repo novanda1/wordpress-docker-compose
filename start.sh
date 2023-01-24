@@ -3,7 +3,6 @@ unzip starter.zip -d $1 && \
 
 echo "\n" &&
 
-cp $(pwd)/wordpress-docker-compose/. $(pwd)/$1 -a  && \
 cd $1 && \
 docker compose up -d && \
 
