@@ -20,7 +20,7 @@ echo "\n" &&
 echo "successfully created your environment" && \
 echo "\n" && \
 echo "Your WordPress is running at http://localhost:8000" && \
-echo "Your Adminer is running at http//:localhost:8080" && \
+echo "Your Adminer is running at http://localhost:8080" && \
 echo "Happy coding..."
 echo "\n" && \
 echo "Your working directory is at ./$1 folder" && \
