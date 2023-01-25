@@ -1,4 +1,3 @@
-  
 version: "3"
 services:
   db:
@@ -19,17 +18,26 @@ services:
     image: wordpress:latest
     environment:
       WORDPRESS_DB_HOST: db
-      WORDPRESS_DB_USER: docker
+      WORDPRESS_DB_USER: root
       WORDPRESS_DB_PASSWORD: secret
       WORDPRESS_DB_NAME: learnwp
       DEPLOY_ENVIRONMENT: local
-      WORDPRESS_DEBUG: 1
+      WORDPRESS_DEBUG: 0
     ports:
-      - 8000:80
+      - 80:80
     depends_on:
       - db
     volumes:
-      - ./wp-content:/var/www/html/wp-content
+      - ./repo/public_html/wp-content:/var/www/html/wp-content
       - ./root:/var/www/html
+
+  wp-cli:
+    image: tatemz/wp-cli
+    volumes:
+      - ./root:/var/www/html
+    entrypoint: wp
+    command: "--info"
+
 volumes:
   mysql:
+
